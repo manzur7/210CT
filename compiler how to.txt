@@ -1,0 +1,29 @@
+Here i explain and show how i managed to run the compiler in notepad++ 
+
+1. installed MinGW installer and necessary c++ plugins 
+
+2. had to modify system variables so I added the bin location into environment variables into path
+
+3. created execute function nppexec in order to execute the code written 
+
+4. created a script called c++
+ this was the code inside the script :
+
+npp_save
+cd "$(CURRENT_DIRECTORY)"
+g++ "$(FILE_NAME)" -o $(NAME_PART) -march=native -O3
+NPP_RUN $(NAME_PART) 
+
+this part of code was taken from youtube from this tutorial as this was the only way
+for me which displayed the code into command prompt 
+
+https://www.youtube.com/watch?v=TOeKtN6Vir4 
+
+5. in command prompt i wrote g++ p1.cpp -o p1.exe to run,create and display my code 
+
+
+
+
+
+
+robert valentin manzu 
